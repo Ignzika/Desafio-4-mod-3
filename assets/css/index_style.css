@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 98%;
+  display: grid;
+  grid-template-columns: 20% auto;
+  min-height: 200vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+#items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cardEj {
+  padding: 3%;
+  margin: 3%;
+  width: 20rem;
+  height: 99%;
+  padding: 1.5%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+}
+
+img {
+  border-radius: 5%;
+  width: 100%;
+  object-fit: cover;
+  grid-column: 1/6;
+  object-fit: cover;
+  float: left;
+}
+
+.dataApart {
+  background-color: rgba(199, 199, 199, 0.933);
+  width: 90%;
+  padding: 0.5%;
+  margin: 5%;
+  opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 5%;
+  grid-column: 2/8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  height: 80%;
+}
+
+img,
+.dataApart {
+  grid-row: 1/2;
+}
+
+.specApart {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.cardEj img:hover {
+  box-shadow: 0px 0px 1px 1px black;
+}
+.cardEj:hover .dataApart {
+  opacity: 1;
+}
+
+.dataApart p {
+  margin: 10%;
+}
+
+#seeMore {
+  width: 100%;
+  background-color: rgb(120, 120, 120);
+  color: rgb(232, 231, 231);
+  border: 0;
+  font-size: 120%;
+  padding: 2.5% 0;
+  border-radius: 30% 30% 30% 30%;
+  cursor: pointer;
+}
+
+aside {
+  background-color: #ddd9d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2%;
+  gap: 1em;
+}
+
+input {
+  width: 60%;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+.space {
+  justify-content: space-around;
+}
+.clmm {
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+#cantidad {
+  border: 2px solid rgba(48, 48, 48, 0.701);
+  padding: 5%;
+}
+
+

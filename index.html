@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index_style.css">
+    <script src="https://kit.fontawesome.com/e08b403aab.js" crossorigin="anonymous"></script>
+
+    <title>Propiedades</title>
+</head>
+
+<body>
+    <aside>
+        <h2>Filtro de busqueda </i></h2>
+        <div class="flex space ">
+
+            <span><i class="fa-sharp fa-solid fa-people-roof" style="color: #443c43;"></i> N° minimo de
+                habitaciones</span>
+            <option value=""></option>
+            <input type="number" name="cuartos" id="cantidadHabitaciones" step="1" min="1" max="10" class="typeNumb">
+        </div>
+
+        <div class="flex clmm">
+
+            <span> <i class="fa-solid fa-ruler-combined" style="color: #443c43;"></i> Tamaño (m <sup>2</sup> ):</span>
+
+            <div class="flex ">
+                <div class="flex">
+                    <span>Desde:</span>
+                    <input type="number" name="desde" step="5" min="10" max="545" id="lowSize" class="typeNumb">
+                </div>
+
+                <div class="flex ">
+                    <span>Hasta:</span>
+                    <input type="number" name="hasta" step="5" min="15" max="500" id="maxSize" class="typeNumb">
+                </div>
+            </div>
+        </div>
+
+        <input type="button" value="Buscar coindencias" id="search">
+
+        <input type="reset" value="Limpiar busqueda" id="blank">
+
+        <h4> Propiedades que coinciden con su busqueda: </h4> <span id="cantidad"> </span>
+
+    </aside>
+
+    <main>
+        <section>
+            <h1>
+                Propiedades
+            </h1>
+
+        </section>
+
+        <section id="items">
+
+            <!-- 
+            <div class="cardEj">
+                <img src="" alt="">
+                <div class="dataApart">
+                    <h2> </h2>
+                    <p> </p>
+                    <div class="specApart">
+                        <span id="iconRoom">
+                            <i class="fa-sharp fa-solid fa-people-roof" style="color: #443c43;"></i>
+                        </span>
+                        <span id="iconSize">
+                            <i class="fa-solid fa-ruler-combined" style="color: #443c43;"></i>
+                        </span>
+                        <span id="NHabitaciones">
+                        </span>
+                        <span id="Nsize">
+                        </span>
+                    </div>
+                    <div>
+                        <span id="size"> </span>
+                        <span>m <sup>2</sup></span>
+                    </div>
+                    <input type="button" value="Ver más" id="seeMore">
+                </div>
+            </div> 
+        
+        -->
+
+        </section>
+    </main>
+
+    <script src="assets/js/index_script.js"></script>
+</body>
+
+</html>
